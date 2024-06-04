@@ -1,0 +1,28 @@
+.main-search {
+  width: 100%;
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  .inner-s {
+    width: 80%;
+
+    position: relative;
+    p {
+      position: absolute;
+      font-size: 18px;
+      top: 18%;
+      left: 5px;
+      color: rgb(109, 109, 108);
+    }
+    input {
+      outline: none;
+      height: 30px;
+      width: 100%;
+      padding: 2px 25px;
+      border-radius: 5px;
+      border: none;
+      border: 1px solid rgb(121, 119, 119);
+    }
+  }
+}

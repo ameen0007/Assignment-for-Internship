@@ -1,0 +1,72 @@
+.MainCard {
+  margin-top: 15px;
+  width: 100%;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+
+  grid-gap: 10px;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  .inner-maincard {
+    box-shadow: 0 4px 8px rgba(10, 114, 36, 0.3);
+    padding: 14px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    border-radius: 8px;
+    button {
+      width: 100%;
+      background-color: #13aa52;
+      border: 1px solid #13aa52;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Akzidenz Grotesk BQ Medium", -apple-system,
+        BlinkMacSystemFont, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      outline: none;
+      outline: 0;
+      padding: 4px;
+      text-align: center;
+      transform: translateY(0);
+      transition: transform 150ms, box-shadow 150ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    button:hover {
+      box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+      transform: translateY(-2px);
+    }
+
+    @media (min-width: 768px) {
+      button {
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .MainCard {
+    padding: 20px 40px;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .MainCard {
+    padding: 20px 70px;
+    gap: 60px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
